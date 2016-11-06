@@ -1,0 +1,20 @@
+{
+  "name": "draggable-map-project",
+  "version": "0.0.0",
+  "authors": [
+    "theConscience <vinton.mail@gmail.com>"
+  ],
+  "description": "draggable map with vueJS and Webpack example",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery.pep": "~0.6.8"
+  }
+}

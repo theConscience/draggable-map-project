@@ -1,5 +1,6 @@
 var path = require('path')
 var webpack = require('webpack')
+var path = require('path');
 
 module.exports = {
   entry: './src/main.js',
@@ -33,7 +34,9 @@ module.exports = {
   },
   resolve: {
     alias: {
-      'vue$': 'vue/dist/vue'
+      'vue$': 'vue/dist/vue',
+      'jquery': 'jquery/src/jquery',
+      'jquery.pep': path.join(__dirname, 'bower_components/jquery.pep/src/jquery.pep.js')
     }
   },
   devServer: {
