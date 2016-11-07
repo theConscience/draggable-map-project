@@ -16,13 +16,8 @@ import $ from 'jquery';
 import pep from 'jquery.pep';
 
 var boundaryCalculator = function(map, viewport, title) {
-  console.log(map, viewport);
-
   const top = viewport.height() - map.height() + title.height();
   const left = viewport.width() - map.width();
-
-  console.log('\ntop, left: ');
-  console.log(top, left);
 
   return [top, 0, 0, left];
 };
@@ -34,10 +29,7 @@ var onCreate = function() {
     const $map = $('.' + this.imageClassName);
     const $viewport = $(window);
 
-    console.log($map, $map.width());
-
     $map.on('load', () => {
-      console.log($map, $map.width());
       const constrainTo = boundaryCalculator($map, $viewport, $title);
       $map.pep({constrainTo}); // same as {constrainTo: constrainTo} in es5
     })
